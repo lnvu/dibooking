@@ -5791,7 +5791,8 @@ li,
 p,
 div,
 blockquote,
-small {
+small,
+label {
 	font-family: Arial !important;
 }
 
@@ -5819,6 +5820,19 @@ a.dropdown-toggle {
 	display: none;
 }
 
-.tim-phong {
+.tim-phong,
+.loc-phong {
 	width: 100%;
+}
+
+.fa.fa-check {
+	line-height: 15px;
+}
+
+.loc-phong {
+	height: 35px;
+}
+
+.h-list-info {
+	text-align: justify;
 }
