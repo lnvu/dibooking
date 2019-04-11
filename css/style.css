@@ -5810,13 +5810,14 @@ label {
 	text-transform: none !important;
 }
 
-a.dropdown-toggle {
+a {
 	cursor: pointer;
 }
 
 .phong option:first-child,
 .nguoi-lon option:first-child,
-.tre-em option:first-child {
+.tre-em option:first-child,
+.thanh-toan option:first-child {
 	display: none;
 }
 
@@ -5830,9 +5831,17 @@ a.dropdown-toggle {
 }
 
 .loc-phong {
-	height: 35px;
+	height: 36px;
 }
 
 .h-list-info {
 	text-align: justify;
+}
+
+.room-info .block-title {
+	margin-bottom: 10px;
+}
+
+.selected-price {
+	text-align: center;
 }
