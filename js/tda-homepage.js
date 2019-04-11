@@ -1,6 +1,4 @@
 (function($) {
-	"use strict";
-
 	$('button.tim-phong').click(function(e) {
 		e.preventDefault();
 
@@ -11,7 +9,7 @@
 		const nguoi_lon = parseInt($('.nguoi-lon').val(), 10);
 		const tre_em = parseInt($('.tre-em').val(), 10);
 
-		if (dia_diem === '' || ngay_nhan.length !== 3 || ngay_tra.length !== 3 || isNaN(phong) || isNaN(nguoi_lon)) {
+		if (is_empty(dia_diem) || ngay_nhan.length !== 3 || ngay_tra.length !== 3 || isNaN(phong) || isNaN(nguoi_lon)) {
 			return;
 		}
 
