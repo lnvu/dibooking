@@ -60,8 +60,8 @@
                     <form>
                     	<div class="form-group">
                         	<div class="input-group">
-                        		<input type="text" class="form-control" placeholder="Tìm kiếm..." required />
-                            	<span class="input-group-btn"><button type="submit" class="btn"><span><i class="fa fa-search"></i></span></button></span>
+                        		<input type="text" class="form-control tim-kiem" placeholder="Tìm kiếm..." required />
+                            	<span class="input-group-btn"><button type="submit" class="btn tim-kiem"><span><i class="fa fa-search"></i></span></button></span>
                             </div><!-- end input-group -->
                         </div><!-- end form-group -->
                     </form>
@@ -86,8 +86,8 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div id="links">
                             <ul class="list-unstyled list-inline">
-                                <li><a href="login-1.html"><span><i class="fa fa-lock"></i></span>Đăng nhập</a></li>
-                                <li><a href="registration-1.html"><span><i class="fa fa-plus"></i></span>Đăng ký</a></li>
+                                <li><a href="dang-nhap.html"><span><i class="fa fa-lock"></i></span>Đăng nhập</a></li>
+                                <li><a href="dang-ky.html"><span><i class="fa fa-plus"></i></span>Đăng ký</a></li>
                                 <li>
                                 	<form>
                                     	<ul class="list-inline">
@@ -131,7 +131,7 @@
                     <div class="header-search hidden-lg">
                     	<a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
                     </div>
-                    <a href="#" class="navbar-brand"><span><i class="fa fa-building"></i>DI</span>BOOKING</a>
+                    <a href="index.html" class="navbar-brand"><span><i class="fa fa-building"></i>DI</span>BOOKING</a>
                 </div><!-- end navbar-header -->
                 
                 <div class="collapse navbar-collapse" id="myNavbar1">
@@ -412,20 +412,34 @@
                                 <div id="hotels" class="tab-pane in active">
                                     <form>
                                         <div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                                                <div class="form-group left-icon">
+													<select class="form-control dia-diem">
+														<option value="" selected>Địa điểm</option>
+														<option value="vn001">Đà Lạt</option>
+														<option value="vn002">Nha Trang</option>
+														<option value="vn003">Đà Nẵng</option>
+														<option value="vn004">Hạ Long</option>
+														<option value="vn005">Côn Đảo</option>
+														<option value="vn006">Phú Quốc</option>
+													</select>
+												</div>							
+                                            </div><!-- end columns -->
                                             
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                                                 <div class="row">
                                                 
                                                     <div class="col-xs-12 col-sm-6">
                                                         <div class="form-group left-icon">
-                                                            <input type="text" class="form-control dpd1" placeholder="Ngày nhận phòng" >
+                                                            <input type="text" class="form-control dpd1 ngay-nhan" placeholder="Ngày nhận" >
                                                             <i class="fa fa-calendar"></i>
                                                         </div>
                                                     </div><!-- end columns -->
                                                     
                                                     <div class="col-xs-12 col-sm-6">
                                                         <div class="form-group left-icon">
-                                                            <input type="text" class="form-control dpd2" placeholder="Ngày trả phòng" >
+                                                            <input type="text" class="form-control dpd2 ngay-tra" placeholder="Ngày trả" >
                                                             <i class="fa fa-calendar"></i>
                                                         </div>
                                                     </div><!-- end columns -->
@@ -438,12 +452,12 @@
                                                 
                                                     <div class="col-xs-12 col-sm-12 col-md-4">
                                                         <div class="form-group right-icon">
-                                                            <select class="form-control">
-                                                                <option selected>Phòng</option>
-                                                                <option>1</option>
-                                                                <option>2</option>
-                                                                <option>3</option>
-                                                                <option>4</option>
+                                                            <select class="form-control phong">
+                                                                <option value="" selected>Phòng</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
                                                             </select>
                                                             <i class="fa fa-angle-down"></i>
                                                         </div>
@@ -451,16 +465,16 @@
                                                     
                                                     <div class="col-xs-6 col-sm-6 col-md-4">
                                                         <div class="form-group right-icon">
-                                                            <select class="form-control">
-                                                                <option selected>Người lớn</option>
-                                                                <option>1</option>
-                                                                <option>2</option>
-                                                                <option>3</option>
-                                                                <option>4</option>
-                                                                <option>5</option>
-                                                                <option>6</option>
-                                                                <option>7</option>
-                                                                <option>8</option>
+                                                            <select class="form-control nguoi-lon">
+                                                                <option value="" selected>Người lớn</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
                                                             </select>
                                                             <i class="fa fa-angle-down"></i>
                                                         </div>
@@ -468,13 +482,13 @@
                                                     
                                                     <div class="col-xs-6 col-sm-6 col-md-4">
                                                         <div class="form-group right-icon">
-                                                            <select class="form-control">
-                                                                <option selected>Trẻ em</option>
-                                                                <option>0</option>
-                                                                <option>1</option>
-                                                                <option>2</option>
-                                                                <option>3</option>
-                                                                <option>4</option>
+                                                            <select class="form-control tre-em">
+                                                                <option value="" selected>Trẻ em</option>
+																<option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
                                                             </select>
                                                             <i class="fa fa-angle-down"></i>
                                                         </div>
@@ -483,8 +497,8 @@
                                                 </div><!-- end row -->
                                             </div><!-- end columns -->
                                             
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 search-btn">
-                                                <button class="btn btn-orange">Search</button>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
+                                                <button class="btn btn-orange tim-phong">Tìm kiếm</button>
                                             </div><!-- end columns -->
                                             
                                         </div><!-- end row -->
@@ -888,6 +902,8 @@
         <script src="js/custom-date-picker.js"></script>
         <!-- <script src="js/custom-video.js"></script> -->
         <!-- <script src="js/popup-ad.js"></script> -->
+		<script src="js/tda-search.js"></script>
+		<script src="js/tda-homepage.js"></script>
         <!-- Page Scripts Ends -->
         
     </body>

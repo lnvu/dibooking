@@ -5812,3 +5812,13 @@ small {
 a.dropdown-toggle {
 	cursor: pointer;
 }
+
+.phong option:first-child,
+.nguoi-lon option:first-child,
+.tre-em option:first-child {
+	display: none;
+}
+
+.tim-phong {
+	width: 100%;
+}
