@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+        <title>DiBooking - Đặt phòng khách sạn Việt Nam</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        
+        <!-- Google Fonts -->	
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CMerriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        
+        <!-- Bootstrap Stylesheet -->	
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+            
+        <!-- Custom Stylesheets -->	
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" id="cpswitch" href="css/orange.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <!--Date-Picker Stylesheet-->
+        <link rel="stylesheet" href="css/datepicker.css">
+        
+        <!-- Slick Stylesheet -->
+		<link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+    </head>
+    
+    
+    <body>
+    
+        <!--====== LOADER =====-->
+        <div class="loader"></div>
+    
+    
+    	<!--======== SEARCH-OVERLAY =========-->       
+        <div class="overlay">
+            <a href="javascript:void(0)" id="close-button" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <div class="form-center">
+                    <form>
+                    	<div class="form-group">
+                        	<div class="input-group">
+                        		<input type="text" class="form-control tim-kiem" placeholder="Tìm kiếm..." required />
+                            	<span class="input-group-btn"><button type="submit" class="btn tim-kiem"><span><i class="fa fa-search"></i></span></button></span>
+                            </div><!-- end input-group -->
+                        </div><!-- end form-group -->
+                    </form>
+                </div><!-- end form-center -->
+            </div><!-- end overlay-content -->
+        </div><!-- end overlay -->
+        
+        
+        <!--============= TOP-BAR ===========-->
+        <div id="top-bar" class="tb-text-white">
+            <div class="container">
+                <div class="row">          
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div id="info">
+                            <ul class="list-unstyled list-inline">
+                                <li><span><i class="fa fa-map-marker"></i></span>11/29 Thoại Ngọc Hầu, Q. Tân Phú, HCM, VN</li>
+                                <li><span><i class="fa fa-phone"></i></span>+84-919 786 543</li>
+                            </ul>
+                        </div><!-- end info -->
+                    </div><!-- end columns -->
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div id="links">
+                            <ul class="list-unstyled list-inline">
+                                <li><a href="#"><span><i class="fa fa-lock"></i></span>Đăng nhập</a></li>
+                                <li><a href="#"><span><i class="fa fa-plus"></i></span>Đăng ký</a></li>
+                            </ul>
+                        </div><!-- end links -->
+                    </div><!-- end columns -->				
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end top-bar -->
+
+        <nav class="navbar navbar-default main-navbar navbar-custom navbar-white" id="mynavbar-1">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" id="menu-button">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <div class="header-search hidden-lg">
+                    	<a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
+                    </div>
+                    <a href="index.html" class="navbar-brand"><span><i class="fa fa-building"></i>DI</span>BOOKING</a>
+                </div><!-- end navbar-header -->
+                
+                <div class="collapse navbar-collapse" id="myNavbar1">
+                    <ul class="nav navbar-nav navbar-right navbar-search-link">
+                        <li class=""><a href="index.html">Trang chủ</a></li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Khách sạn<span><i class="fa fa-angle-down"></i></span></a>
+                            <ul class="dropdown-menu">
+                            	<li><a href="top-khach-san-mien-bac.html">Top khách sạn miền Bắc</a></li>
+                                <li><a href="top-khach-san-mien-trung.html">Top khách sạn miền Trung</a></li>
+                                <li><a href="top-khach-san-mien-nam.html">Top khách sạn miền Nam</a></li>
+                            </ul>			
+                        </li>
+						<li class=""><a href="#">Khuyến mãi</a></li>
+						<li class=""><a href="#">Đánh giá</a></li>
+						<li class=""><a href="#">Về chúng tôi</a></li>
+                		<li><a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a></li>
+                    </ul>
+                </div><!-- end navbar collapse -->
+            </div><!-- end container -->
+        </nav><!-- end navbar -->
+        
+        <div class="sidenav-content">
+            <div id="mySidenav" class="sidenav" >
+                <h2 id="web-name"><span><i class="fa fa-building"></i></span>DiBooking</h2>
+
+                <div id="main-menu">
+                	<div class="closebtn">
+                        <button class="btn btn-default" id="closebtn">&times;</button>
+                    </div><!-- end close-btn -->
+                    
+                    <div class="list-group panel">
+
+                        <a href="index.html" class="list-group-item"><span><i class="fa fa-home link-icon"></i></span>Trang chủ</a>
+                        
+                        <a href="#hotels-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-building link-icon"></i></span>Hotels<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                        <div class="collapse sub-menu" id="hotels-links">
+                            <a href="top-khach-san-mien-bac.html" class="list-group-item">Top khách sạn miền Bắc</a>
+                            <a href="top-khach-san-mien-trung.html" class="list-group-item">Top khách sạn miền Trung</a>
+                            <a href="top-khach-san-mien-nam.html" class="list-group-item">Top khách sạn miền Nam</a>
+                        </div><!-- end sub-menu -->
+
+                        <a href="#" class="list-group-item"><span><i class="fa fa-percent link-icon"></i></span>Khuyến mãi</a>
+
+                        <a href="#" class="list-group-item"><span><i class="fa fa-comment link-icon"></i></span>Đánh giá</a>
+
+                        <a href="#" class="list-group-item"><span><i class="fa fa-address-card link-icon"></i></span>Về chúng tôi</a>
+                    </div><!-- end list-group -->
+                </div><!-- end main-menu -->
+            </div><!-- end mySidenav -->
+        </div><!-- end sidenav-content -->
+        
+        
+        <!--================== PAGE-COVER ===============-->
+        <section class="page-cover" id="cover-hotel-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                    	<h1 class="page-title">Six Senses Ninh Vân Bay</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">Six Senses Ninh Vân Bay</li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end page-cover -->
+        
+        
+        <!--===== INNERPAGE-WRAPPER ====-->
+        <section class="innerpage-wrapper">
+        	<div id="hotel-details" class="innerpage-section-padding">
+                <div class="container">
+                    <div class="row">        	
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 content-side">
+                            
+                            <div class="detail-slider">
+                                <div class="feature-slider">
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-1.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-2.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-3.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-4.jpg" class="img-responsive" alt="feature-img"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-5.jpg" class="img-responsive" alt="feature-img"/></div>
+                                </div><!-- end feature-slider -->
+                            	
+                                <div class="feature-slider-nav">
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-thumb-1.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-thumb-2.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-thumb-3.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-thumb-4.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                    <div><img src="images/six-senses-ninh-van-bay/h-feature-thumb-5.jpg" class="img-responsive" alt="feature-thumb"/></div>
+                                </div><!-- end feature-slider-nav -->
+                            </div>  <!-- end detail-slider -->
+
+                            <div class="detail-tabs">
+                            	<ul class="nav nav-tabs nav-justified">
+                                    <li class="active"><a href="#hotel-overview" data-toggle="tab">Giới thiệu khách sạn</a></li>
+                                    <li><a href="#restaurant" data-toggle="tab">Nhà hàng</a></li>
+                                    <li><a href="#pick-up" data-toggle="tab">Đưa đón sân bay</a></li>
+                                    <li><a href="#luxury-gym" data-toggle="tab">Phòng Gym</a></li>
+                                    <li><a href="#swimming-club" data-toggle="tab">Hồ bơi</a></li>
+                                </ul>
+                            	
+                                <div class="tab-content">
+
+                                    <div id="hotel-overview" class="tab-pane in active">
+                                    	<div class="row">
+                                    		<div class="col-sm-4 col-md-4 tab-img">
+                                        		<img src="images/six-senses-ninh-van-bay/hotel-detail-tab-1.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                        	
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                        		<h3>Giới thiệu khách sạn</h3>
+                                                <p>Six Senses Ninh Van Bay tọa lạc phía Tây vịnh Ninh Vân - một vịnh liền kề và trông ra vịnh Nha Trang. Bến tàu của khu nghỉ dưỡng cách sân bay Cam Ranh khoảng 49 km theo cung đường biển, nếu theo QL1A là 54,9 km. Thời gian đi tàu qua đảo khoảng 20 đến 25 phút.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end hotel-overview -->
+                                	
+                                    <div id="restaurant" class="tab-pane">
+                                    	<div class="row">
+                                    		<div class="col-sm-4 col-md-4 tab-img">
+                                        		<img src="images/six-senses-ninh-van-bay/hotel-detail-tab-2.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                        	
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                        		<h3>Nhà hàng</h3>
+                                                <p>Nhà hàng với khung cảnh Vịnh Ninh Vân đẹp tựa tranh vẽ. Thực đơn phong phú giới thiệu sản vật địa phương, thịt và các món hải sản có chất lượng hàng đầu tạo nên các món ăn vừa đẹp mắt vừa ngon miệng.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end restaurant -->
+                                    
+                                    <div id="pick-up" class="tab-pane">
+                                    	<div class="row">
+                                    		<div class="col-sm-4 col-md-4 tab-img">
+                                        		<img src="images/six-senses-ninh-van-bay/hotel-detail-tab-3.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                        	
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                        		<h3>Pick Up Services</h3>
+                                                <p>Resort cung cấp dịch vụ đưa đón tận sân bay dành cho các khách hàng có nhu cầu đặc biệt.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end pick-up -->
+                                    
+                                    <div id="luxury-gym" class="tab-pane">
+                                    	<div class="row">
+                                    		<div class="col-sm-4 col-md-4 tab-img">
+                                        		<img src="images/six-senses-ninh-van-bay/hotel-detail-tab-4.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                        	
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                        		<h3>Phòng Gym</h3>
+                                                <p>Phòng tập được trang bị hiện đại, phục vụ miễn phí cho du khách nghỉ dưỡng. Thời gian hoạt động: 07:00-21:00.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end luxury-gym -->
+                                    
+                                    <div id="swimming-club" class="tab-pane">
+                                    	<div class="row">
+                                    		<div class="col-sm-4 col-md-4 tab-img">
+                                        		<img src="images/six-senses-ninh-van-bay/hotel-detail-tab-5.jpg" class="img-responsive" alt="flight-detail-img" />
+                                            </div><!-- end columns -->
+                                        	
+                                            <div class="col-sm-8 col-md-8 tab-text">
+                                        		<h3>Hồ bơi</h3>
+                                                <p>Ngoài các hồ bơi riêng ở từng biệt thự, Six Senses Côn Đảo còn có 01 hồ bơi chung có tầm nhìn ra biển với độ sâu tầm 2m.</p>
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+                                    </div><!-- end sports-club -->
+                                    
+                                </div><!-- end tab-content -->
+                            </div><!-- end detail-tabs -->
+                            
+                            <div class="available-blocks" id="available-rooms">
+                            	<h2>Các loại phòng</h2>
+                            	<div class="list-block main-block room-block">
+                                    <div class="list-content">
+                                        <div class="main-img list-img room-img">
+                                            <a>
+                                                <img src="images/six-senses-ninh-van-bay/available-room-1.jpg" class="img-responsive" alt="room-img" />
+                                            </a>
+                                            <div class="main-mask">
+                                                <ul class="list-unstyled list-inline offer-price-1">
+                                                    <li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                </ul>
+                                            </div><!-- end main-mask -->
+                                        </div><!-- end room-img -->
+                                        
+                                        <div class="list-info room-info">
+                                            <h3 class="block-title">Hill Top Pool Villa</h3>
+                                            <p class="block-minor">Số khách tối đa: 02</p>
+                                            <p class="block-minor">Hướng: biển</p>
+                                            <p class="block-minor">Diện tích: 152 m2</p>
+                                            <p>Villa nằm trên đồi cao, vì vậy hạn chế gia đình có trẻ em dưới 12 tuổi.</p>
+											<a class="btn btn-orange btn-lg chon-phong" data-price="5,699,000" data-name="Hill Top Pool Villa">Chọn</a>
+                                         </div><!-- end room-info -->
+                                    </div><!-- end list-content -->
+                                </div><!-- end room-block -->
+								
+                                <div class="list-block main-block room-block">
+                                    <div class="list-content">
+                                        <div class="main-img list-img room-img">
+                                            <a>
+                                                <img src="images/six-senses-ninh-van-bay/available-room-2.jpg" class="img-responsive" alt="room-img" />
+                                            </a>
+                                            <div class="main-mask">
+                                                <ul class="list-unstyled list-inline offer-price-1">
+                                                    <li class="price">19,999,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                </ul>
+                                            </div><!-- end main-mask -->
+                                        </div><!-- end room-img -->
+                                        
+                                        <div class="list-info room-info">
+                                            <h3 class="block-title">Beachfront Pool Villa</h3>
+                                            <p class="block-minor">Số khách tối đa: 02</p>
+                                            <p class="block-minor">Hướng: biển</p>
+                                            <p class="block-minor">Diện tích: 176 m2</p>
+                                            <p>Villa có không gian riêng tư rộng rãi và hồ bơi riêng, lối đi dẫn ra bãi biển.</p>
+											<a class="btn btn-orange btn-lg chon-phong" data-price="19,999,000" data-name="Beachfront Pool Villa">Chọn</a>
+                                         </div><!-- end room-info -->
+                                    </div><!-- end list-content -->
+                                </div><!-- end room-block -->
+                                
+                                <div class="list-block main-block room-block">
+                                    <div class="list-content">
+                                        <div class="main-img list-img room-img">
+                                            <a>
+                                                <img src="images/six-senses-ninh-van-bay/available-room-4.jpg" class="img-responsive" alt="room-img" />
+                                            </a>
+                                            <div class="main-mask">
+                                                <ul class="list-unstyled list-inline offer-price-1">
+                                                    <li class="price">32,999,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                </ul>
+                                            </div><!-- end main-mask -->
+                                        </div><!-- end room-img -->
+                                        
+                                        <div class="list-info room-info">
+                                            <h3 class="block-title">Water Pool Villa</h3>
+                                            <p class="block-minor">Số khách tối đa:02</p>
+                                            <p class="block-minor">Hướng: biển</p>
+                                            <p class="block-minor">Diện tích: 154 m2</p>
+                                            <p>Villa được xây dựng trên mép nước hướng ra các rạn san hô của Vịnh Ninh Vân, biệt thự hướng về phía mặt trời lặn đón ánh hoàng hôn.</p>
+											<a class="btn btn-orange btn-lg chon-phong" data-price="32,999,000" data-name="Water Pool Villa">Chọn</a>
+                                         </div><!-- end room-info -->
+                                    </div><!-- end list-content -->
+                                </div><!-- end room-block -->
+                                
+                                <div class="list-block main-block room-block">
+                                    <div class="list-content">
+                                        <div class="main-img list-img room-img">
+                                            <a>
+                                                <img src="images/six-senses-ninh-van-bay/available-room-3.jpg" class="img-responsive" alt="room-img" />
+                                            </a>
+                                            <div class="main-mask">
+                                                <ul class="list-unstyled list-inline offer-price-1">
+                                                    <li class="price">29,999,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                </ul>
+                                            </div><!-- end main-mask -->
+                                        </div><!-- end room-img -->
+                                        
+                                        <div class="list-info room-info">
+                                            <h3 class="block-title">Family Beach Pool Villa</h3>
+                                            <p class="block-minor">Số khách tối đa: 04</p>
+                                            <p class="block-minor">Hướng: biển</p>
+                                            <p class="block-minor">Diện tích: 207 m2</p>
+                                            <p>Villa được xây dựng giữa các núi đá nằm cuối phía tây vịnh Ninh Vân.</p>
+											<a class="btn btn-orange btn-lg chon-phong" data-price="29,999,000" data-name="Family Beach Pool Villa">Chọn</a>
+                                         </div><!-- end room-info -->
+                                    </div><!-- end list-content -->
+                                </div><!-- end room-block -->
+                                
+                            </div><!-- end available-rooms -->
+                            
+                            
+                            <div class="pages">
+                                <ol class="pagination">
+                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-angle-left"></i></span></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-angle-right"></i></span></a></li>
+                                </ol>
+                            </div><!-- end pages -->
+                        </div><!-- end columns -->
+                                                
+                        <div class="col-xs-12 col-sm-12 col-md-3 side-bar right-side-bar">
+                            
+                            <div class="side-bar-block booking-form-block">
+                            	<h2 class="selected-price"><b class="ks-price">0</b> VNĐ<br/><span class="ks-name">(quý khách chưa chọn phòng)</span></h2>
+                            
+                            	<div class="booking-form">
+                                	<h3>Đặt Phòng</h3>
+                                    <p>Đặt lịch nghỉ dưỡng của bạn ngay hôm nay</p>
+                                    
+                                    <form>
+                                    	<div class="form-group">
+                                    		<input type="text" class="form-control ho" placeholder="Họ" required/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                    		<input type="text" class="form-control ten" placeholder="Tên" required/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                    		<input type="email" class="form-control email" placeholder="Email" required/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                    		<input type="text" class="form-control dien-thoai" placeholder="Điện thoại" required/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                    		<input type="text" class="form-control dpd1 ngay-nhan" placeholder="Ngày nhận" required/>                                       		<i class="fa fa-calendar"></i>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                    		<input type="text" class="form-control dpd2 ngay-tra" placeholder="Ngày trả" required/>                                       		<i class="fa fa-calendar"></i>
+                                        </div>
+                                        
+                                        <div class="form-group right-icon">
+											<select class="form-control phong">
+												<option value="" selected>Phòng</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="3">4</option>
+											</select>
+											<i class="fa fa-angle-down"></i>
+										</div>
+                                        
+                                        <div class="row">
+                                        	<div class="col-sm-6 col-md-12 col-lg-6 no-sp-r">
+                                                <div class="form-group right-icon">
+                                                    <select class="form-control nguoi-lon">
+                                                        <option value="" selected>Người lớn</option>
+                                                        <option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="3">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-6 col-md-12 col-lg-6 no-sp-l">    
+                                                <div class="form-group right-icon">
+                                                    <select class="form-control tre-em">
+                                                        <option value="" selected>Trẻ em</option>
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="3">4</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group right-icon">
+                                            <select class="form-control thanh-toan">
+                                                <option value="" selected>Thanh toán</option>
+                                                <option value="cc">Thẻ tín dụng</option>
+                                                <option value="cash">Tiền mặt</option>
+                                            </select>
+                                            <i class="fa fa-angle-down"></i>
+                                        </div>
+                                        
+                                        <div class="checkbox custom-check">
+                                        	<input type="checkbox" id="dong-y" name="checkbox"/>
+                                            <label for="dong-y"><span><i class="fa fa-check"></i></span>Đồng ý với <a href="#">Điều khoản & Điều kiện</a></label>
+                                        </div>
+                                        
+                                        <button class="btn btn-block btn-orange" id="dat-phong">Đặt Phòng</button>
+                                    </form>
+
+                                </div><!-- end booking-form -->
+                            </div><!-- end side-bar-block -->
+
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-6 col-md-12">    
+                                    <div class="side-bar-block support-block">
+                                        <h3>Bạn cần giúp đỡ?</h3>
+                                        <p>Đừng ngần ngại gọi cho chúng tôi qua số máy:</p>
+                                        <div class="support-contact">
+                                            <span><i class="fa fa-phone"></i></span>
+                                            <p>+84-919 786 543</p>
+                                        </div><!-- end support-contact -->
+                                    </div><!-- end side-bar-block -->
+                                </div><!-- end columns -->
+
+                            </div><!-- end row -->
+                        </div><!-- end columns -->  
+                        
+                    </div><!-- end row -->
+            	</div><!-- end container -->
+            </div><!-- end hotel-details -->
+        </section><!-- end innerpage-wrapper -->
+        
+        
+        <!--======================= BEST FEATURES =====================-->
+        <section id="best-features" class="banner-padding black-features">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-6 col-md-4">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-dollar"></i></span>
+                        	<h3>Giá tốt nhất</h3>
+                            <p>Chúng tôi cam kết luôn có giá tốt nhất thị trường. Ngoài ra, chúng tôi luôn thường xuyên có những khuyến mãi hấp dẫn.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-4">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-lock"></i></span>
+                        	<h3>An toàn và bảo mật</h3>
+                            <p>Là một trong các công ty tại Việt Nam đạt chứng nhận bảo mật PCI DSS, chúng tôi cam kết đảm bảo việc bảo mật thông tin của quý khách theo các quy định của pháp luật.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-4">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-thumbs-up"></i></span>
+                        	<h3>Dịch vụ hàng đầu</h3>
+                            <p>Chúng tôi luôn không ngừng đẩy mạnh hoạt động và phát triển, cả về sản phẩm, dịch vụ và đội ngũ, nhằm đáp ứng rất tốt nhu cầu của khách hàng.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                </div><!-- end row -->
+        	</div><!-- end container -->
+        </section><!-- end best-features -->
+
+
+        <!--========================= NEWSLETTER-1 ==========================-->
+        <section id="newsletter-1" class="section-padding back-size newsletter"> 
+            <div class="container">
+                <div class="row">
+                	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2>ĐỪNG BỎ LỠ CƠ HỘI GIÁ TỐT</h2>
+                        <p>Đăng ký email để nhận những ưu đãi, khuyến mãi mới và hot nhất.</p>	
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="email" class="form-control input-lg dang-ky-nhan-tin" placeholder="Email của bạn" required/>
+                                    <span class="input-group-btn"><button class="btn btn-lg dang-ky-nhan-tin"><i class="fa fa-envelope"></i></button></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end newsletter-1 -->
+
+
+        <!--======================= FOOTER =======================-->
+        <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+        
+            <div id="footer-top" class="banner-padding ftr-top-grey ftr-text-white">
+                <div class="container">
+                    <div class="row">
+						
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-contact">
+                            <h3 class="footer-heading">LIÊN HỆ</h3>
+                            <ul class="list-unstyled">
+                            	<li><span><i class="fa fa-map-marker"></i></span>11/29 Thoại Ngọc Hầu, Q. Tân Phú, HCM, VN</li>
+                            	<li><span><i class="fa fa-phone"></i></span>+84-919 786 543</li>
+                                <li><span><i class="fa fa-envelope"></i></span>booking@dihotel.vn</li>
+                            </ul>
+                        </div><!-- end columns -->
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-links">
+                            <h3 class="footer-heading">DIBOOKING</h3>
+                            <ul class="list-unstyled">
+                            	<li><a href="#">Hợp tác với chúng tôi</a></li>
+                                <li><a href="#">Khách hàng thân thiết</a></li>
+                                <li><a href="#">Cảm nang du lịch</a></li>
+                                <li><a href="#">Câu hỏi thường gặp</a></li>
+                                <li><a href="#">Chính sách quyền riêng tư</a></li>
+                            </ul>
+                        </div><!-- end columns -->
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-about">
+                            <h3 class="footer-heading">VỀ CHÚNG TÔI</h3>
+                            <p>DiBooking là một phần của giải pháp DiHotel được phát triển bởi TDA Solutions Corp tại Nhật Bản và Việt Nam.</p>
+                            <ul class="social-links list-inline list-unstyled">
+                            	<li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                            	<li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-linkedin"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
+                            </ul>
+                        </div><!-- end columns -->
+                        
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-top -->
+
+            <div id="footer-bottom" class="ftr-bot-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                            <p>© 2017 <a href="#">DiBooking</a>. All rights reserved.</p>
+                        </div><!-- end columns -->
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                            <ul class="list-unstyled list-inline">
+                            	<li><a href="#">Điều khoản & điều kiện</a></li>
+                                <li><a href="#">Chính sách quyền riêng tư</a></li>
+                            </ul>
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-bottom -->
+
+        </section><!-- end footer -->
+        
+        
+        <!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.colorpanel.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <script src="js/custom-date-picker.js"></script>
+        <script src="js/custom-slick.js"></script>
+		<script src="js/tda-common.js"></script>
+		<script src="js/tda-search.js"></script>
+		<script src="js/tda-subscribe.js"></script>
+		<script src="js/tda-hotel-detail.js"></script>
+        <!-- Page Scripts Ends -->
+    </body>
+
+</html>
