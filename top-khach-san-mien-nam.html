@@ -20,23 +20,13 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" id="cpswitch" href="css/orange.css">
         <link rel="stylesheet" href="css/responsive.css">
-    
-        <!-- Owl Carousel Stylesheet -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
         
-        <!-- Flex Slider Stylesheet -->
-        <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
-        
-        <!--Date-Picker Stylesheet-->
-        <link rel="stylesheet" href="css/datepicker.css">
-        
-        <!-- Magnific Gallery -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
+        <!--Jquery UI Stylesheet-->
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
     </head>
     
     
-    <body id="main-homepage">
+    <body>
     
         <!--====== LOADER =====-->
         <div class="loader"></div>
@@ -129,9 +119,9 @@
                     
                     <div class="list-group panel">
                     
-                        <a href="#home-links" class="list-group-item active" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-home link-icon"></i></span>Home<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                        <a href="#home-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-home link-icon"></i></span>Home<span><i class="fa fa-chevron-down arrow"></i></span></a>
                         <div class="collapse sub-menu" id="home-links">
-                            <a href="#" class="list-group-item active">Main Homepage</a>
+                            <a href="index-2.html" class="list-group-item">Main Homepage</a>
                             <a href="flight-homepage.html" class="list-group-item">Flight Homepage</a>
                             <a href="hotel-homepage.html" class="list-group-item">Hotel Homepage</a>
                             <a href="tour-homepage.html" class="list-group-item">Tour Homepage</a>
@@ -156,11 +146,11 @@
                             <a href="flight-offers.html" class="list-group-item">Hot Offers</a>
                         </div><!-- end sub-menu -->
                         
-                        <a href="#hotels-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-building link-icon"></i></span>Hotels<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                        <a href="#hotels-links" class="list-group-item active" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-building link-icon"></i></span>Hotels<span><i class="fa fa-chevron-down arrow"></i></span></a>
                         <div class="collapse sub-menu" id="hotels-links">
                             <a href="hotel-homepage.html" class="list-group-item">Hotel Homepage</a>
                             <a href="hotel-listing-left-sidebar.html" class="list-group-item">List View Left Sidebar</a>
-                            <a href="hotel-listing-right-sidebar.html" class="list-group-item">List View Right Sidebar</a>
+                            <a href="#" class="list-group-item active">List View Right Sidebar</a>
                             <a href="hotel-grid-left-sidebar.html" class="list-group-item">Grid View Left Sidebar</a>
                             <a href="hotel-grid-right-sidebar.html" class="list-group-item">Grid View Right Sidebar</a>
                             <a href="hotel-detail-left-sidebar.html" class="list-group-item">Detail Left Sidebar</a>
@@ -172,6 +162,8 @@
                         </div><!-- end sub-menu -->
                         
                         <a href="#tours-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-globe link-icon"></i></span>Tours<span><i class="fa fa-chevron-down arrow"></i></span></a>
+
+
                         <div class="collapse sub-menu" id="tours-links">
                             <a href="tour-homepage.html" class="list-group-item">Tour Homepage</a>
                             <a href="tour-listing-left-sidebar.html" class="list-group-item">List View Left Sidebar</a>
@@ -184,7 +176,6 @@
                             <a href="tour-booking-right-sidebar.html" class="list-group-item">Booking Right Sidebar</a>
                             <a href="tour-search-result.html" class="list-group-item">Search Result</a>
                             <a href="tour-offers.html" class="list-group-item">Hot Offers</a>
-                            
                         </div><!-- end sub-menu -->
                         
                         <a href="#cruise-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-ship link-icon"></i></span>Cruise<span><i class="fa fa-chevron-down arrow"></i></span></a>
@@ -314,325 +305,358 @@
         </div><!-- end sidenav-content -->
         
         
-		<!--========================= FLEX SLIDER =====================-->
-        <section class="flexslider-container" id="flexslider-container-1">
-
-            <div class="flexslider slider" id="slider-1">
-                <ul class="slides">
-                    
-                    <li class="item-1" style="background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/nha-trang.jpg) 50% 0%;
-	background-size:cover;
-	height:100%;">
-                    	<div class=" meta">         
-                            <div class="container">
-                                <h2>Khám phá</h2>
-                                <h1>Nha Trang</h1>
-                                <a href="nha-trang.html" class="btn btn-default">Xem thêm</a>
-                            </div><!-- end container -->  
-                        </div><!-- end meta -->
-                    </li><!-- end item-1 -->
-
-                    <li class="item-2" style="background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/con-dao.jpg) 50% 0%;
-	background-size:cover;
-	height:100%;">
-                        <div class=" meta">         
-                            <div class="container">
-                                <h2>Du lịch</h2>
-                                <h1>Côn Đảo</h1>
-                                <a href="con-dao.html" class="btn btn-default">Xem thêm</a>
-                            </div><!-- end container -->  
-                        </div><!-- end meta -->
-                    </li><!-- end item-2 -->
-
-                    <li class="item-3" style="background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/da-nang.jpg) 50% 0%;
-	background-size:cover;
-	height:100%;">
-                        <div class=" meta">         
-                            <div class="container">
-                                <h2>Tận hưởng</h2>
-                                <h1>Đà Nẵng</h1>
-                                <a href="da-nang.html" class="btn btn-default">Xem thêm</a>
-                            </div><!-- end container -->  
-                        </div><!-- end meta -->
-                    </li><!-- end item-3 -->
-                   
-                </ul>
-            </div><!-- end slider -->
-            
-            <div class="search-tabs" id="search-tabs-1">
-            	<div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                        
-                            <ul class="nav nav-tabs center-tabs" style="display: none !important;">
-                                <li class="active"><a href="#hotels" data-toggle="tab"><span><i class="fa fa-building"></i></span><span class="st-text">Hotels</span></a></li>
-                                <li><a href="#flights" data-toggle="tab"><span><i class="fa fa-plane"></i></span><span class="st-text">Flights</span></a></li>
-                                <li><a href="#tours" data-toggle="tab"><span><i class="fa fa-suitcase"></i></span><span class="st-text">Tours</span></a></li>
-                                <li><a href="#cruise" data-toggle="tab"><span><i class="fa fa-ship"></i></span><span class="st-text">Cruise</span></a></li>
-                                <li><a href="#cars" data-toggle="tab"><span><i class="fa fa-car"></i></span><span class="st-text">Cars</span></a></li>
-                            </ul>
-        
-                            <div class="tab-content">
-                                
-                                <div id="hotels" class="tab-pane in active">
-                                    <form>
-                                        <div class="row">
-
-											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
-                                                <div class="form-group left-icon">
-													<select class="form-control dia-diem">
-														<option value="" selected>Địa điểm</option>
-														<option value="vn001">Đà Lạt</option>
-														<option value="vn002">Nha Trang</option>
-														<option value="vn003">Đà Nẵng</option>
-														<option value="vn004">Hạ Long</option>
-														<option value="vn005">Côn Đảo</option>
-														<option value="vn006">Phú Quốc</option>
-													</select>
-												</div>							
-                                            </div><!-- end columns -->
-                                            
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                                                <div class="row">
-                                                
-                                                    <div class="col-xs-12 col-sm-6">
-                                                        <div class="form-group left-icon">
-                                                            <input type="text" class="form-control dpd1 ngay-nhan" placeholder="Ngày nhận" >
-                                                            <i class="fa fa-calendar"></i>
-                                                        </div>
-                                                    </div><!-- end columns -->
-                                                    
-                                                    <div class="col-xs-12 col-sm-6">
-                                                        <div class="form-group left-icon">
-                                                            <input type="text" class="form-control dpd2 ngay-tra" placeholder="Ngày trả" >
-                                                            <i class="fa fa-calendar"></i>
-                                                        </div>
-                                                    </div><!-- end columns -->
-        
-                                                </div><!-- end row -->								
-                                            </div><!-- end columns -->
-                                            
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
-                                                <div class="row">
-                                                
-                                                    <div class="col-xs-12 col-sm-12 col-md-4">
-                                                        <div class="form-group right-icon">
-                                                            <select class="form-control phong">
-                                                                <option value="" selected>Phòng</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                            </select>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </div>
-                                                    </div><!-- end columns -->
-                                                    
-                                                    <div class="col-xs-6 col-sm-6 col-md-4">
-                                                        <div class="form-group right-icon">
-                                                            <select class="form-control nguoi-lon">
-                                                                <option value="" selected>Người lớn</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                                <option value="6">6</option>
-                                                                <option value="7">7</option>
-                                                                <option value="8">8</option>
-                                                            </select>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </div>
-                                                    </div><!-- end columns -->
-                                                    
-                                                    <div class="col-xs-6 col-sm-6 col-md-4">
-                                                        <div class="form-group right-icon">
-                                                            <select class="form-control tre-em">
-                                                                <option value="" selected>Trẻ em</option>
-																<option value="0">0</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                            </select>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </div>
-                                                    </div><!-- end columns -->
-                                                    
-                                                </div><!-- end row -->
-                                            </div><!-- end columns -->
-                                            
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
-                                                <button class="btn btn-orange tim-phong">Tìm kiếm</button>
-                                            </div><!-- end columns -->
-                                            
-                                        </div><!-- end row -->
-                                    </form>
-                                </div><!-- end hotels -->
-
-                            </div><!-- end tab-content -->
-                            
-                        </div><!-- end columns -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div><!-- end search-tabs -->
-            
-        </section><!-- end flexslider-container -->
-        
-        
-        <!--=============== HOTEL OFFERS ===============-->
-        <section id="hotel-offers" class="section-padding">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-sm-12">
-                    	<div class="page-heading">
-                        	<h2>Top khách sạn hàng đầu</h2>
-                            <hr class="heading-line" />
-                        </div><!-- end page-heading -->
-                        
-                        <div class="owl-carousel owl-theme owl-custom-arrow" id="owl-hotel-offers">
-                            
-                            <div class="item">
-                                <div class="main-block hotel-block">
-                                    <div class="main-img">
-                                    	<a href="swiss-belresort-tuyen-lam.html">
-                                        	<img src="images/swiss-belresort-tuyen-lam.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                        	<ul class="list-unstyled list-inline offer-price-1">
-                                            	<li class="price">1,499,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end offer-img -->
-                                    
-                                    <div class="main-info hotel-info">
-                                    	<div class="arrow">
-                                        	<a href="swiss-belresort-tuyen-lam.html"><span><i class="fa fa-angle-right"></i></span></a>
-                                        </div><!-- end arrow -->
-                                        
-                                    	<div class="main-title hotel-title">
-                                            <a href="swiss-belresort-tuyen-lam.html">Swiss-Belresort Tuyền Lâm</a>
-                                            <p>Đà Lạt</p>
-                                        </div><!-- end hotel-title -->
-                                    </div><!-- end hotel-info -->
-                                </div><!-- end hotel-block -->
-                            </div><!-- end item -->
-                        	
-                            <div class="item">
-                                <div class="main-block hotel-block">
-                                    <div class="main-img">
-                                    	<a href="six-senses-con-dao.html">
-                                        	<img src="images/six-senses-con-dao.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                        	<ul class="list-unstyled list-inline offer-price-1">
-                                            	<li class="price">9,999,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end offer-img -->
-                                    
-                                    <div class="main-info hotel-info">
-                                    	<div class="arrow">
-                                        	<a href="six-senses-con-dao.html"><span><i class="fa fa-angle-right"></i></span></a>
-                                        </div><!-- end arrow -->
-                                        
-                                    	<div class="main-title hotel-title">
-                                            <a href="six-senses-con-dao.html">Six Senses Côn Đảo</a>
-                                            <p>Côn Đảo</p>
-                                        </div><!-- end hotel-title -->
-                                    </div><!-- end hotel-info -->
-                                </div><!-- end hotel-block -->
-                            </div><!-- end item -->
-                            
-                            <div class="item">
-                                <div class="main-block hotel-block">
-                                    <div class="main-img">
-                                    	<a href="six-senses-ninh-van-bay.html">
-                                        	<img src="images/six-senses-ninh-van-bay.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                        	<ul class="list-unstyled list-inline offer-price-1">
-                                            	<li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end offer-img -->
-                                    
-                                    <div class="main-info hotel-info">
-                                    	<div class="arrow">
-                                        	<a href="six-senses-ninh-van-bay.html"><span><i class="fa fa-angle-right"></i></span></a>
-                                        </div><!-- end arrow -->
-                                        
-                                    	<div class="main-title hotel-title">
-                                            <a href="six-senses-ninh-van-bay.html">Six Senses Ninh Vân Bay</a>
-                                            <p>Nha Trang</p>
-                                        </div><!-- end hotel-title -->
-                                    </div><!-- end hotel-info -->
-                                </div><!-- end hotel-block -->
-                            </div><!-- end item -->
-                            
-                            <div class="item">
-                                <div class="main-block hotel-block">
-                                    <div class="main-img">
-                                        <a href="sapa-jade-hill-resort.html">
-                                        	<img src="images/sapa-jade-hill-resort.jpg" class="img-responsive" alt="hotel-img" />
-                                        </a>
-                                        <div class="main-mask">
-                                        	<ul class="list-unstyled list-inline offer-price-1">
-                                            	<li class="price">1,899,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
-                                                <li class="rating">
-                                                	<span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star orange"></i></span>
-                                                    <span><i class="fa fa-star lightgrey"></i></span>
-                                                </li>
-                                            </ul>
-                                        </div><!-- end main-mask -->
-                                    </div><!-- end offer-img -->
-                                    
-                                    <div class="main-info hotel-info">
-                                    	<div class="arrow">
-                                        	<a href="sapa-jade-hill-resort.html"><span><i class="fa fa-angle-right"></i></span></a>
-                                        </div><!-- end arrow -->
-                                        
-                                    	<div class="main-title hotel-title">
-                                            <a href="sapa-jade-hill-resort.html">Sapa Jade Hill Resort</a>
-                                            <p>Sapa</p>
-                                        </div><!-- end hotel-title -->
-                                    </div><!-- end hotel-info -->
-                                </div><!-- end hotel-block -->
-                            </div><!-- end item -->
-                            
-                        </div><!-- end owl-hotel-offers -->
-                        
-                        <div class="view-all text-center">
-                        	<a href="danh-sach-khach-san.html" class="btn btn-orange">Xem tất cả</a>
-                        </div><!-- end view-all -->
+        <!--=================== PAGE-COVER =================-->
+        <section class="page-cover" id="cover-hotel-grid-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                    	<h1 class="page-title">Danh sách khách sạn</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">Danh sách khách sạn</li>
+                        </ul>
                     </div><!-- end columns -->
                 </div><!-- end row -->
-        	</div><!-- end container -->
-        </section><!-- end hotel-offers -->
+            </div><!-- end container -->
+        </section><!-- end page-cover -->
+        
+        
+        <!--===== INNERPAGE-WRAPPER ====-->
+        <section class="innerpage-wrapper">
+        	<div id="hotel-listing" class="innerpage-section-padding">
+                <div class="container">
+                    <div class="row">        	
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 content-side">
+							
+                            <div class="list-block main-block h-list-block">
+                            	<div class="list-content">
+                            		<div class="main-img list-img h-list-img">
+                                        <a href="six-senses-ninh-van-bay.html">
+                                            <img src="images/six-senses-ninh-van-bay.jpg" class="img-responsive" alt="hotel-img" />
+                                        </a>
+
+                                        <div class="main-mask">
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end h-list-img -->
+
+                                    <div class="list-info h-list-info">
+                                        <h3 class="block-title"><a href="six-senses-ninh-van-bay.html">Six Senses Ninh Vân Bay</a></h3>
+                                        <p class="block-minor">Nha Trang</p>
+                                        <p>Six Senses Ninh Van Bay được đưa vào hoạt động năm 2004 và được quản lý bởi tập đoàn Six Senses. Khu nghỉ dưỡng gồm 59 villas có hồ bơi riêng với thiết kế sử dụng các nguyên liệu thân thiện gần gũi với môi trường như đá và gỗ, các villas đều xây dựng theo địa hình để hạn chế việc phá hủy môi trường.</p>
+                                        <a href="six-senses-ninh-van-bay.html" class="btn btn-orange btn-lg">Xem thêm</a>
+                                     </div><!-- end h-list-info -->
+                            	</div><!-- end list-content -->
+                            </div><!-- end h-list-block -->
+                            
+                            <div class="list-block main-block h-list-block">
+                            	<div class="list-content">
+                            		<div class="main-img list-img h-list-img">
+                                        <a href="six-senses-ninh-van-bay.html">
+                                            <img src="images/six-senses-ninh-van-bay.jpg" class="img-responsive" alt="hotel-img" />
+                                        </a>
+
+                                        <div class="main-mask">
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end h-list-img -->
+
+                                    <div class="list-info h-list-info">
+                                        <h3 class="block-title"><a href="six-senses-ninh-van-bay.html">Six Senses Ninh Vân Bay</a></h3>
+                                        <p class="block-minor">Nha Trang</p>
+                                        <p>Six Senses Ninh Van Bay được đưa vào hoạt động năm 2004 và được quản lý bởi tập đoàn Six Senses. Khu nghỉ dưỡng gồm 59 villas có hồ bơi riêng với thiết kế sử dụng các nguyên liệu thân thiện gần gũi với môi trường như đá và gỗ, các villas đều xây dựng theo địa hình để hạn chế việc phá hủy môi trường.</p>
+                                        <a href="six-senses-ninh-van-bay.html" class="btn btn-orange btn-lg">Xem thêm</a>
+                                     </div><!-- end h-list-info -->
+                            	</div><!-- end list-content -->
+                            </div><!-- end h-list-block -->
+                            
+                            <div class="list-block main-block h-list-block">
+                            	<div class="list-content">
+                            		<div class="main-img list-img h-list-img">
+                                        <a href="six-senses-ninh-van-bay.html">
+                                            <img src="images/six-senses-ninh-van-bay.jpg" class="img-responsive" alt="hotel-img" />
+                                        </a>
+
+                                        <div class="main-mask">
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end h-list-img -->
+
+                                    <div class="list-info h-list-info">
+                                        <h3 class="block-title"><a href="six-senses-ninh-van-bay.html">Six Senses Ninh Vân Bay</a></h3>
+                                        <p class="block-minor">Nha Trang</p>
+                                        <p>Six Senses Ninh Van Bay được đưa vào hoạt động năm 2004 và được quản lý bởi tập đoàn Six Senses. Khu nghỉ dưỡng gồm 59 villas có hồ bơi riêng với thiết kế sử dụng các nguyên liệu thân thiện gần gũi với môi trường như đá và gỗ, các villas đều xây dựng theo địa hình để hạn chế việc phá hủy môi trường.</p>
+                                        <a href="six-senses-ninh-van-bay.html" class="btn btn-orange btn-lg">Xem thêm</a>
+                                     </div><!-- end h-list-info -->
+                            	</div><!-- end list-content -->
+                            </div><!-- end h-list-block -->
+                            
+                            <div class="list-block main-block h-list-block">
+                            	<div class="list-content">
+                            		<div class="main-img list-img h-list-img">
+                                        <a href="six-senses-ninh-van-bay.html">
+                                            <img src="images/six-senses-ninh-van-bay.jpg" class="img-responsive" alt="hotel-img" />
+                                        </a>
+
+                                        <div class="main-mask">
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end h-list-img -->
+
+                                    <div class="list-info h-list-info">
+                                        <h3 class="block-title"><a href="six-senses-ninh-van-bay.html">Six Senses Ninh Vân Bay</a></h3>
+                                        <p class="block-minor">Nha Trang</p>
+                                        <p>Six Senses Ninh Van Bay được đưa vào hoạt động năm 2004 và được quản lý bởi tập đoàn Six Senses. Khu nghỉ dưỡng gồm 59 villas có hồ bơi riêng với thiết kế sử dụng các nguyên liệu thân thiện gần gũi với môi trường như đá và gỗ, các villas đều xây dựng theo địa hình để hạn chế việc phá hủy môi trường.</p>
+                                        <a href="six-senses-ninh-van-bay.html" class="btn btn-orange btn-lg">Xem thêm</a>
+                                     </div><!-- end h-list-info -->
+                            	</div><!-- end list-content -->
+                            </div><!-- end h-list-block -->
+                            
+                            <div class="list-block main-block h-list-block">
+                            	<div class="list-content">
+                            		<div class="main-img list-img h-list-img">
+                                        <a href="six-senses-ninh-van-bay.html">
+                                            <img src="images/six-senses-ninh-van-bay.jpg" class="img-responsive" alt="hotel-img" />
+                                        </a>
+
+                                        <div class="main-mask">
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end h-list-img -->
+
+                                    <div class="list-info h-list-info">
+                                        <h3 class="block-title"><a href="six-senses-ninh-van-bay.html">Six Senses Ninh Vân Bay</a></h3>
+                                        <p class="block-minor">Nha Trang</p>
+                                        <p>Six Senses Ninh Van Bay được đưa vào hoạt động năm 2004 và được quản lý bởi tập đoàn Six Senses. Khu nghỉ dưỡng gồm 59 villas có hồ bơi riêng với thiết kế sử dụng các nguyên liệu thân thiện gần gũi với môi trường như đá và gỗ, các villas đều xây dựng theo địa hình để hạn chế việc phá hủy môi trường.</p>
+                                        <a href="six-senses-ninh-van-bay.html" class="btn btn-orange btn-lg">Xem thêm</a>
+                                     </div><!-- end h-list-info -->
+                            	</div><!-- end list-content -->
+                            </div><!-- end h-list-block -->
+                            
+                            <div class="list-block main-block h-list-block">
+                            	<div class="list-content">
+                            		<div class="main-img list-img h-list-img">
+                                        <a href="six-senses-ninh-van-bay.html">
+                                            <img src="images/six-senses-ninh-van-bay.jpg" class="img-responsive" alt="hotel-img" />
+                                        </a>
+
+                                        <div class="main-mask">
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="price">5,699,000 VNĐ<span class="divider">/</span><span class="pkg">Đêm</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end h-list-img -->
+
+                                    <div class="list-info h-list-info">
+                                        <h3 class="block-title"><a href="six-senses-ninh-van-bay.html">Six Senses Ninh Vân Bay</a></h3>
+                                        <p class="block-minor">Nha Trang</p>
+                                        <p>Six Senses Ninh Van Bay được đưa vào hoạt động năm 2004 và được quản lý bởi tập đoàn Six Senses. Khu nghỉ dưỡng gồm 59 villas có hồ bơi riêng với thiết kế sử dụng các nguyên liệu thân thiện gần gũi với môi trường như đá và gỗ, các villas đều xây dựng theo địa hình để hạn chế việc phá hủy môi trường.</p>
+                                        <a href="six-senses-ninh-van-bay.html" class="btn btn-orange btn-lg">Xem thêm</a>
+                                     </div><!-- end h-list-info -->
+                            	</div><!-- end list-content -->
+                            </div><!-- end h-list-block -->
+                            
+                            <div class="pages">
+                                <ol class="pagination">
+                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-angle-left"></i></span></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-angle-right"></i></span></a></li>
+                                </ol>
+                            </div><!-- end pages -->
+                        </div><!-- end columns -->
+                                                
+                        <div class="col-xs-12 col-sm-12 col-md-3 side-bar right-side-bar">
+                                        
+                            <div class="side-bar-block filter-block">
+                                <h3>Tùy chọn</h3>
+                                <p>Tìm kiếm kỳ nghỉ mơ ước của bạn ngay hôm nay</p>
+                                
+                                <div class="panels-group">
+                                    
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">					
+                                            <a href="#panel-cat" data-toggle="collapse" >Danh mục <span><i class="fa fa-angle-down"></i></span></a>
+                                        </div><!-- end panel-heading -->
+                                        
+                                        <div id="panel-cat" class="panel-collapse collapse">
+                                            <div class="panel-body text-left">
+                                                <ul class="list-unstyled">
+                                                    <li class="custom-check"><input type="checkbox" id="check01" name="checkbox"/>
+                                                    <label for="check01"><span><i class="fa fa-check"></i></span>Tất cả</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check02" name="checkbox"/>
+                                                    <label for="check02"><span><i class="fa fa-check"></i></span>Khách sạn</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check04" name="checkbox"/>
+                                                    <label for="check04"><span><i class="fa fa-check"></i></span>Resort</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check05" name="checkbox"/>
+                                                    <label for="check05"><span><i class="fa fa-check"></i></span>Biệt thự</label></li>				
+                                                    <li class="custom-check"><input type="checkbox" id="check06" name="checkbox"/>
+                                                    <label for="check06"><span><i class="fa fa-check"></i></span>Nhà nghỉ</label></li>
+                                                </ul>
+                                            </div><!-- end panel-body -->
+                                        </div><!-- end panel-collapse -->
+                                    </div><!-- end panel-default -->
+                                    
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">					
+                                            <a href="#panel-fac" data-toggle="collapse" >Tiện nghi<span><i class="fa fa-angle-down"></i></span></a>
+                                        </div><!-- end panel-heading -->
+                                        
+                                        <div id="panel-fac" class="panel-collapse collapse">
+                                            <div class="panel-body text-left">
+                                                <ul class="list-unstyled">
+                                                    <li class="custom-check"><input type="checkbox" id="check08" name="checkbox"/>
+                                                    <label for="check08"><span><i class="fa fa-check"></i></span>Điều hòa</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check09" name="checkbox"/>
+                                                    <label for="check09"><span><i class="fa fa-check"></i></span>Phòng tắm</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check10" name="checkbox"/>
+                                                    <label for="check10"><span><i class="fa fa-check"></i></span>Truyền hình cáp</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check11" name="checkbox"/>
+                                                    <label for="check11"><span><i class="fa fa-check"></i></span>Bãi đậu xe</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check12" name="checkbox"/>
+                                                    <label for="check12"><span><i class="fa fa-check"></i></span>Hồ bơi</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check13" name="checkbox"/>
+                                                    <label for="check13"><span><i class="fa fa-check"></i></span>Wi-fi</label></li>
+                                                </ul>
+                                            </div><!-- end panel-body -->
+                                        </div><!-- end panel-collapse -->
+                                    </div><!-- end panel-default -->
+                                    
+                                    <div class="panel panel-default rating">
+                                        <div class="panel-heading">					
+                                            <a href="#panel-rate" data-toggle="collapse" >Tiêu chuẩn <span><i class="fa fa-angle-down"></i></span></a>
+                                        </div><!-- end panel-heading -->
+                                        
+                                        <div id="panel-rate" class="panel-collapse collapse">
+                                            <div class="panel-body text-left">
+                                                <ul class="list-unstyled">
+                                                    <li class="custom-check"><input type="checkbox" id="check14" name="checkbox"/>
+                                                    <label for="check14"><span><i class="fa fa-check"></i></span>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check15" name="checkbox"/>
+                                                    <label for="check15"><span><i class="fa fa-check"></i></span>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check16" name="checkbox"/>
+                                                    <label for="check16"><span><i class="fa fa-check"></i></span>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star lightgrey"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check17" name="checkbox"/>
+                                                    <label for="check17"><span><i class="fa fa-check"></i></span>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star lightgrey"></i>
+													</label></li>
+                                                    <li class="custom-check"><input type="checkbox" id="check18" name="checkbox"/>
+                                                    <label for="check18"><span><i class="fa fa-check"></i></span>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+														<i class="fa fa-star orange"></i>
+													</label></li>
+                                                </ul>
+                                            </div><!-- end panel-body -->
+                                        </div><!-- end panel-collapse -->
+                                    </div><!-- end panel-default -->
+                                    
+                                </div><!-- end panel-group -->
+                                
+                                <div class="price-slider">
+                                    <button class="btn btn-orange loc-phong">Tìm kiếm</button>
+                                </div><!-- end price-slider -->
+                            </div><!-- end side-bar-block -->
+                            
+                            <div class="row">
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-12">    
+                                    <div class="side-bar-block support-block">
+                                        <h3>Bạn cần giúp đỡ?</h3>
+                                        <p>Đừng ngần ngại gọi cho chúng tôi qua số máy:</p>
+                                        <div class="support-contact">
+                                            <span><i class="fa fa-phone"></i></span>
+                                            <p>+84-919 786 543</p>
+                                        </div><!-- end support-contact -->
+                                    </div><!-- end side-bar-block -->
+                                </div><!-- end columns -->
+                                
+                            </div><!-- end row -->
+                        </div><!-- end columns -->  
+                        
+                    </div><!-- end row -->
+            	</div><!-- end container -->
+            </div><!-- end hotel-listing -->
+        </section><!-- end innerpage-wrapper -->
         
         
         <!--======================= BEST FEATURES =====================-->
@@ -665,76 +689,7 @@
                 </div><!-- end row -->
         	</div><!-- end container -->
         </section><!-- end best-features -->
-
         
-        <!--==================== TESTIMONIALS ====================-->
-        <section id="testimonials" class="section-padding back-size">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-sm-12">
-                    	<div class="page-heading white-heading">
-                        	<h2>Phản hồi từ khách hàng</h2>
-                            <hr class="heading-line" />
-                        </div><!-- end page-heading -->
-
-                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                            <div class="carousel-inner text-center">
-                            
-                                <div class="item active">
-                                    <blockquote>Cảm ơn công ty đã đặt phòng giúp chúng tôi trong dịp Tết vừa qua dù yêu cầu của chúng tôi khá rắc rối. Chúng tôi sẽ tiếp tục tin tưởng giao phó cho quý công ty cho các chuyến du lịch sắp tới.</blockquote>
-                                    <div class="rating">
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                    </div><!-- end rating -->
-                                    <small>Hùng Nguyễn</small>
-                                </div><!-- end item -->
-                                
-                                <div class="item">
-                                    <blockquote>Thank you for helping us make reservations during the last Chrismast. I will continue to use your services for future trips.</blockquote>
-                                    <div class="rating">
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                    </div><!-- end rating -->
-                                            
-                                    <small>Belleuvre Christophe</small>
-                                </div><!-- end item -->
-                                
-                                <div class="item">
-                                    <blockquote>Vợ chồng mình có lẽ là khách hàng thân thiết của công ty từ những ngày đầu. Công ty luôn hỗ trợ rất nhiệt tình dù đôi khi tôi liên lạc khá trễ. Xin cảm ơn về dịch vụ rất tốt mà các bạn cung cấp.</blockquote>
-                                    <div class="rating">
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                        <span><i class="fa fa-star orange"></i></span>
-                                    </div><!-- end rating -->
-                                    
-                                    <small>Huyền Phạm</small>
-                                </div><!-- end item -->
-                                
-                            </div><!-- end carousel-inner -->
-                            
-                            <ol class="carousel-indicators">
-                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img src="images/client-1.jpg" class="img-responsive"  alt="client-img">
-                                </li>
-                                <li data-target="#quote-carousel" data-slide-to="1"><img src="images/client-2.jpg" class="img-responsive"  alt="client-img">
-                                </li>
-                                <li data-target="#quote-carousel" data-slide-to="2"><img src="images/client-3.jpg" class="img-responsive"  alt="client-img">
-                                </li>
-                            </ol>
-        
-                        </div><!-- end quote-carousel -->
-                    </div><!-- end columns -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </section><!-- end testimonials --> 
-
         
         <!--========================= NEWSLETTER-1 ==========================-->
         <section id="newsletter-1" class="section-padding back-size newsletter"> 
@@ -822,44 +777,16 @@
         </section><!-- end footer -->
         
         
-        <div id="popup-subscribe" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <div class="popup-ad-text">
-                                    <p>Đăng ký thành công!</p>
-                                </div><!-- end popup-ad-text -->
-                            </div><!-- end columns -->
-                        </div><!-- end row -->
-                        
-                    </div><!-- end modal-bpdy -->
-                </div><!-- end modal-content -->
-            </div><!-- end modal-dialog -->
-        </div><!-- end popup-ad -->
-                            
-                            
         <!-- Page Scripts Starts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.colorpanel.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script> 
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
         <script src="js/custom-navigation.js"></script>
-        <script src="js/custom-flex.js"></script>
-        <script src="js/custom-owl.js"></script>
-        <script src="js/custom-date-picker.js"></script>
 		<script src="js/tda-common.js"></script>
 		<script src="js/tda-search.js"></script>
 		<script src="js/tda-subscribe.js"></script>
         <!-- Page Scripts Ends -->
-        
     </body>
 
 </html>
