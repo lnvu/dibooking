@@ -5792,7 +5792,8 @@ p,
 div,
 blockquote,
 small,
-label {
+label,
+span {
 	font-family: Arial !important;
 }
 
@@ -5817,7 +5818,10 @@ a {
 .phong option:first-child,
 .nguoi-lon option:first-child,
 .tre-em option:first-child,
-.thanh-toan option:first-child {
+.thanh-toan option:first-child,
+.loai-the option:first-child,
+.nam-het-han option:first-child,
+.thang-het-han option:first-child {
 	display: none;
 }
 

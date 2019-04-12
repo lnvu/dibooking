@@ -13,6 +13,7 @@
 	var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 	 
 	var checkin = date1.datepicker({
+		format: 'dd-mm-yyyy',
 		onRender: function(date) {
 			return date.valueOf() < now.valueOf() ? 'disabled' : '';
 		}
@@ -29,6 +30,7 @@
 	}).data('datepicker');
 	
 	var checkout = date2.datepicker({
+		format: 'dd-mm-yyyy',
 		onRender: function(date) {
 			return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
 		}
@@ -36,9 +38,8 @@
 	}).on('changeDate', function(ev) {
 		checkout.hide();
 	}).data('datepicker');
-	
+
 	date3.datepicker({
-		format: 'mm-dd-yyyy'
+		format: 'dd-mm-yyyy',
 	});
-			
 })(jQuery);
