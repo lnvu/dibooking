@@ -11,7 +11,6 @@
 	$('.dien-thoai').val(booking_info.thong_tin_khach.dien_thoai);
 
 	if (booking_info.thong_tin_khach.hasOwnProperty('ngay_sinh')) {
-		// $('.ngay-sinh').val();
 		$('.ngay-sinh').datepicker('setValue', new Date(booking_info.thong_tin_khach.ngay_sinh.nam, booking_info.thong_tin_khach.ngay_sinh.thang - 1, booking_info.thong_tin_khach.ngay_sinh.ngay));
 	}
 
@@ -30,7 +29,7 @@
 		}
 	});
 
-	$('.ks-don-gia').html(booking_info.thong_tin_thanh_toan.don_gia).formatdigits().append('<span> / đêm</span>');
+	$('.ks-don-gia').html(booking_info.thong_tin_thanh_toan.don_gia).formatdigits().append('<span>đ / đêm</span>');
 
 	$('.ks-ngay-nhan').text(booking_info.thong_tin_dat_phong.ngay_nhan);
 	$('.ks-ngay-tra').text(booking_info.thong_tin_dat_phong.ngay_tra);
@@ -41,7 +40,7 @@
 
 	$('.ks-khach').text(booking_info.thong_tin_dat_phong.khach);
 
-	$('.ks-phi').text(booking_info.thong_tin_thanh_toan.tong).formatdigits();
+	$('.ks-phi').text(booking_info.thong_tin_thanh_toan.tong).formatdigits().append('đ');
 
 	$('.right-side-bar').show();
 
@@ -68,6 +67,11 @@
 			return;
 		}
 
+		const phuong_thuc_el = $('.payment-tabs .nav-tabs li.active a');
+
+		data.thong_tin_thanh_toan.phuong_thuc = phuong_thuc_el.data('payment');
+		data.thong_tin_thanh_toan.ten_phuong_thuc = phuong_thuc_el.text();
+
 		if (data.thong_tin_thanh_toan.phuong_thuc === 'cc') {
 			const loai_the = $('.loai-the').val();
 			const so_the = $('.so-the').val();
@@ -85,6 +89,9 @@
 				'so': so_the.replace(so_the.substr(4, 8), 'XXXXXXXX'),
 				'het_han': thang_het_han + '-' + nam_het_han
 			};
+		}
+		else {
+			delete data.thong_tin_thanh_toan['thong_tin_the'];
 		}
 
 		data.thong_tin_khach['ho'] = ho;

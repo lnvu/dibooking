@@ -5849,3 +5849,28 @@ a {
 .selected-price {
 	text-align: center;
 }
+
+/************* CONFIRM PAGE ***********/
+
+#cover-thank-you.confirm{
+	background:url('../images/cover-hotel-confirm.jpg') 50% 50%;
+	background-size:cover;
+}
+
+.t-info-heading {
+	font-weight: 700;
+}
+
+.tro-lai,
+.xac-nhan-thanh-toan {
+	height: 40px;
+}
+
+.tro-lai {
+	margin-right: 20px;
+	background-color: black !important;
+}
+
+.tro-lai:hover {
+	background-color: gray !important;
+}
