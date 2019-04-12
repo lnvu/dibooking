@@ -1,3 +1,13 @@
+window.ga = function() {}
+
+function formatNumber(num) {
+	var parts = (num + '').toString().split('.');
+
+	parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+	return parts.join('.');
+}
+
 function is_empty(obj) {
 	const objType = typeof(obj)
 
@@ -20,4 +30,10 @@ function is_empty(obj) {
 	}
 
 	return false;
+}
+
+$.fn.formatdigits = function(){ 
+    return this.each(function(){ 
+        $(this).text(formatNumber($(this).text())); 
+    })
 }
