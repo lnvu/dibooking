@@ -15,8 +15,8 @@
 		e.preventDefault();
 
 		const dia_diem = $('.dia-diem').val();
-		const ngay_nhan = $('.ngay-nhan').val().split('/');
-		const ngay_tra = $('.ngay-tra').val().split('/');
+		const ngay_nhan = $('.ngay-nhan').val().split('-');
+		const ngay_tra = $('.ngay-tra').val().split('-');
 		const phong = parseInt($('.phong').val(), 10);
 		const nguoi_lon = parseInt($('.nguoi-lon').val(), 10);
 		const tre_em = parseInt($('.tre-em').val(), 10);
